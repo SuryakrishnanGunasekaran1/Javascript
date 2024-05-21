@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <style>
+        body {
+          background-image: url('zills.avif');
+          width: 1220;
+          height: 720;
+        }
+        .id{
+            
+             margin: auto;
+                width: 60%;
+                border: 3px solid #ff85e1;
+                padding: 10px;
+
+        }
+        h2{
+            color: crimson;
+            background-color: azure;
+        }
+        </style>
+        </head>
+    <body>
+        <div class = "id">
+            <h1>The Monsterverse</h1>
+
+            <input type="text" id="mw" placeholder="Enter the Titan Name"> 
+
+              <button onclick="monsterverse()">submit</button>
+            </form>
+        
+        <h2><p id="demo" ></p></h2>
+        </div>
+        <script >
+            function monsterverse()
+{
+     titan = document.getElementById("mw").value;
+
+let call = titan >='a' && titan <= 'f' ? "beta" 
+: titan >='g' && titan <= 'l' ? "alpha" 
+: titan >= 'm' && titan <='q' ? "protecter"
+: titan >='r' && titan <= 'w' ? "Destroyer"
+: titan >='x' && titan <= 'z' ? "omega":"unkown species"
+alert(call);
+}
+
+
+        </script> 
+    </body>
+</html>
