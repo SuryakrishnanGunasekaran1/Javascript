@@ -1,0 +1,75 @@
+<html>
+	<style>
+		
+		button,p,input{
+			font-style: italic;
+			font-size: large;
+			font-weight: 100;
+			font-family: fantasy;
+		}
+		button{
+			background-color: rgb(238, 0, 40);
+		}
+		div{
+			background-color: darkcyan;
+			padding-top: 5%;
+			padding-right: 5%;
+			padding-left: 0%;
+			padding-bottom: 5%;
+			margin-top: 5%;
+			margin-right: 25%;
+			margin-left: 25%;
+			margin-bottom: 5%;
+			
+		}
+	</style>
+<body> 
+
+<!--	<ul>
+		<li>mp40</li>
+		<li>double barell</li>
+		<li>sniper</li>
+		<li>ump</li>
+		<li>desert eagle</li>
+	</ul> 
+
+<input type="text" id="myInput" placeholder="Enter text"> 
+	
+-->
+<center>
+<div >
+	<select id = "j">
+		<option value="mp40">mp40</option>
+		<option value="sniper">sniper</option>
+		<option value="ump">ump</option>
+		<option value="desert eagle">desert eagle</option>
+	</select>
+	
+	<br>
+	<br>
+	
+	<input type="email" id = "i" placeholder="email">
+	<br>
+	<br>
+	<button onclick="getValue()">CLICK</button>
+    <p id = "d" ></p>
+	<p id="e"></p>
+</div>
+</center>
+	
+	<script> 
+	
+		function getValue() { 
+			
+			let s = document.getElementById("i").value; 
+			document.getElementById("d").innerHTML = s;
+			let k = document.getElementById("j").value; 
+			document.getElementById("e").innerHTML = k;
+			
+		}
+		
+	</script> 
+
+</body> 
+
+</html> 
