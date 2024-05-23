@@ -1,10 +1,13 @@
-const Employee = {
+ Employee = {
     Ename:"Adam",
     Eid : 8890,
     Email : "adam@gmail.com",
     Design : "TeamLead",
-    Branch :"Banglore"
+    Branch :"Banglore",
+    Salary:""
 }
+//properties
+Object.defineProperty(Employee,"Salary",{value:"50000"})
 
 let emp1 = Employee
 //freeze method
@@ -23,5 +26,5 @@ let x = Object.entries(emp1)
 console.log(x)
  y = Object.fromEntries(x)
 console.log(y)
-//object.values Methods return 1D array
+//object.values Methods 
 console.log(Object.values(Employee))
