@@ -23,3 +23,5 @@ let x = Object.entries(emp1)
 console.log(x)
  y = Object.fromEntries(x)
 console.log(y)
+//object.values Methods return 1D array
+console.log(Object.values(Employee))
